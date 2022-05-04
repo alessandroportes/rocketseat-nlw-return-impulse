@@ -40,7 +40,11 @@ export function WidgetForm() {
       <div className="flex py-8 gap-2 w-full">
         {Object.entries(feedbackTypes).map(([key, value]) => {
           return (
-            <button>
+            <button
+              className="bg-zinc-800 rounded-lg py-5 gap-2 w-24 flex flex-1 flex-col items-center border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+              // onClick={ }
+              type="button"
+            >
               <img src={value.image.source} alt={value.image.alt} />
               <span>{value.title}</span>
             </button>
